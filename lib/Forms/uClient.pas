@@ -187,10 +187,10 @@ var I:Integer;
     VillageLines :TStringList;
     Memo :TMemo;
 begin
-  {if (FileDateToDateTime(FileAge(ExtractFilePath(Application.ExeName)+'Data/village.txt'))) <
+  {if (FileDateToDateTime(FileAge(ExtractFilePath(Application.ExeName)+'assets/village.txt'))) <
   (Now-(5/24)) then
   URLDownloadToFile(nil,'https://br86.tribalwars.com.br/map/village.txt',
-                    PChar(ExtractFilePath(Application.ExeName)+'Data/village.txt'),0,nil);  }
+                    PChar(ExtractFilePath(Application.ExeName)+'assets/village.txt'),0,nil);  }
 
   Memo:=TMemo.Create(Self);
   Memo.Parent:=Client;
@@ -199,7 +199,7 @@ begin
   VillageLines:= TStringList.Create;
 
   Memo.Clear;
-  Memo.Lines.LoadFromFile(ExtractFilePath(Application.ExeName)+'Data/village.txt');
+  Memo.Lines.LoadFromFile(ExtractFilePath(Application.ExeName)+'assets/village.txt');
   for i:=0 to Memo.Lines.Count-1 do
     begin
       Split(Memo.Lines[I],VillageLines);
@@ -242,7 +242,7 @@ reg.Free;
 //Variables
 wood:=0;iron:=0;stone:=0;storage:=0;pop_cur:=0;pop_max:=0;
 //Browser
-//WebBrowser1.Navigate2('www.tribalwars.com.br');
+MainBrowser.Navigate2('www.tribalwars.com.br');
 //Map
 Map := TMap.Create;
 //Initial Villages

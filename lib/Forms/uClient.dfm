@@ -20,17 +20,15 @@ object Client: TClient
     Top = 97
     Width = 977
     Height = 474
-    ActivePage = Tab
+    ActivePage = TabSheet2
     Align = alClient
     TabOrder = 0
-    ExplicitLeft = 377
-    ExplicitTop = 240
-    ExplicitWidth = 289
-    ExplicitHeight = 193
     object Tab: TTabSheet
       Caption = 'Tab'
-      ExplicitWidth = 281
-      ExplicitHeight = 165
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object MapBox: TScrollBox
         Left = 0
         Top = 0
@@ -41,15 +39,15 @@ object Client: TClient
         BevelEdges = []
         BorderStyle = bsNone
         TabOrder = 0
-        ExplicitWidth = 281
-        ExplicitHeight = 165
       end
     end
     object TabSheet2: TTabSheet
       Caption = 'TabSheet2'
       ImageIndex = 1
-      ExplicitWidth = 281
-      ExplicitHeight = 165
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object MainBrowser: TWebBrowser
         Left = 0
         Top = 0
@@ -77,7 +75,6 @@ object Client: TClient
     Height = 97
     Align = alTop
     TabOrder = 1
-    ExplicitWidth = 1125
     DesignSize = (
       973
       93)

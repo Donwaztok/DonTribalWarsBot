@@ -2,12 +2,13 @@ program DonTribalWarsBot;
 
 uses
   Vcl.Forms,
-  cVillage in 'Class\cVillage.pas',
-  cMap in 'Class\cMap.pas',
-  uClient in 'Forms\uClient.pas' {Client},
-  cImageMap in 'Class\cImageMap.pas',
-  cImageBuffer in 'Class\cImageBuffer.pas',
-  cImageBuffered in 'Class\cImageBuffered.pas';
+  uClient in 'lib\Forms\uClient.pas' {Client},
+  cImageBuffer in 'lib\Class\cImageBuffer.pas',
+  cImageBuffered in 'lib\Class\cImageBuffered.pas',
+  cImageMap in 'lib\Class\cImageMap.pas',
+  cMap in 'lib\Class\cMap.pas',
+  cVillage in 'lib\Class\cVillage.pas',
+  iAction in 'lib\Interfaces\iAction.pas';
 
 {$R *.res}
 
