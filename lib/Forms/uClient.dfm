@@ -20,15 +20,11 @@ object Client: TClient
     Top = 97
     Width = 977
     Height = 474
-    ActivePage = TabSheet2
+    ActivePage = Tab
     Align = alClient
     TabOrder = 0
     object Tab: TTabSheet
       Caption = 'Tab'
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object MapBox: TScrollBox
         Left = 0
         Top = 0
@@ -44,10 +40,6 @@ object Client: TClient
     object TabSheet2: TTabSheet
       Caption = 'TabSheet2'
       ImageIndex = 1
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object MainBrowser: TWebBrowser
         Left = 0
         Top = 0
@@ -326,14 +318,13 @@ object Client: TClient
       Caption = 'Label_Population'
       ExplicitLeft = 1014
     end
-    object Label_Ressources: TLabel
+    object Label_Resources: TLabel
       Left = 753
       Top = 12
-      Width = 86
+      Width = 81
       Height = 13
       Anchors = [akTop, akRight]
-      Caption = 'Label_Ressources'
-      ExplicitLeft = 901
+      Caption = 'Label_Resources'
     end
     object Label_ServerTime: TLabel
       Left = 866
@@ -370,6 +361,22 @@ object Client: TClient
       Anchors = [akTop, akRight]
       Caption = 'Label1'
       ExplicitLeft = 635
+    end
+    object Edit_Server: TEdit
+      Left = 3
+      Top = 9
+      Width = 46
+      Height = 21
+      TabOrder = 0
+      Text = 'br102'
+    end
+    object Edit_URL: TEdit
+      Left = 55
+      Top = 9
+      Width = 170
+      Height = 21
+      TabOrder = 1
+      Text = 'tribalwars.com.br'
     end
   end
   object Timer1: TTimer

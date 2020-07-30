@@ -8,7 +8,9 @@ uses
   cImageMap in 'lib\Class\cImageMap.pas',
   cMap in 'lib\Class\cMap.pas',
   cVillage in 'lib\Class\cVillage.pas',
-  iAction in 'lib\Interfaces\iAction.pas';
+  Action in 'lib\Interfaces\Action.pas',
+  cScavenge in 'lib\Class\Actions\cScavenge.pas',
+  cActions in 'lib\Class\cActions.pas';
 
 {$R *.res}
 
